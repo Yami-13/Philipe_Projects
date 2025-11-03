@@ -37,6 +37,7 @@ chown DeliveryBot:DeliveryBot /reports
 #Changing perms so only DeliveryBot can read/write/execute it
 chmod 700 /reports
 
+#This SHOULD make the user autologin whenever the system comes up.
 #Define the file to modify
 FILE="/etc/inittab"
 
