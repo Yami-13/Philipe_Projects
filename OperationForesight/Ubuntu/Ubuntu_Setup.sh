@@ -31,11 +31,14 @@ passwd -d RecievingBot
 #Makes lil bro's home directory
 mkdir /home/.RecievingBot
 
+#Makes lil bro's ssh directory
+mkdir /home/.RecievingBot/.ssh
+
 #Makes lil bro the owner and group owner of his home
-chown RecievingBot:RecievingBot  /home/.RecievingBot
+chown -R RecievingBot:RecievingBot  /home/.RecievingBot
 
 #Gives only lil vro permissions to do anything within or with his directory.
-chmod 700 /home/.RecievingBot
+chmod -R 700 /home/.RecievingBot
 
 #Makes the directory lil bro will put info into
 mkdir /.reports
